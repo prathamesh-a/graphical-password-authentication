@@ -1,0 +1,179 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Graphical Authentication System API",
+    "description": "API documentation for the Graphical Authentication System",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/user/login": {
+      "post": {
+        "summary": "login user into application",
+        "responses": {
+          "200": {
+            "description": "Login of user is successful."
+          },
+          "406": {
+            "description": "The given parameters are not in valid format."
+          },
+          "500": {
+            "description": "The given parameters are not valid."
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "pattern": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/user/signup": {
+      "post": {
+        "summary": "register new user into application",
+        "responses": {
+          "200": {
+            "description": "Signup of new user is successful."
+          },
+          "406": {
+            "description": "The given parameters are not in valid format."
+          },
+          "500": {
+            "description": "The given parameters are not valid."
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "pattern": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/user/check/email": {
+      "post": {
+        "summary": "check for duplicate email",
+        "responses": {
+          "200": {
+            "description": "Check for email is successful.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "exists": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Internal server error."
+          },
+          "500": {
+            "description": "The given parameters are not in valid format."
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/user/check/username": {
+      "post": {
+        "summary": "check for duplicate username",
+        "responses": {
+          "200": {
+            "description": "Check for username is successful.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "exists": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Internal server error."
+          },
+          "500": {
+            "description": "The given parameters are not in valid format."
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
