@@ -28,8 +28,8 @@ git clone https://github.com/prathamesh-a/graphical-password-authentication.git
 git clone https://github.com/prathamesh-a/graphical-password-authentication.git
 ```
 
-<p>3. <a href="www.google.com">Installation of Server</a></p>
-<p>4. <a href="www.google.com">Installation of Client</a></p>
+<p>3. <a href="https://github.com/prathamesh-a/graphical-password-authentication/blob/main/server/README.md#installation">Installation of Server</a></p>
+<p>4. <a href="https://github.com/prathamesh-a/graphical-password-authentication/blob/main/client/README.md#installation">Installation of Client</a></p>
 
 ## Usage
 To use the application, follow these steps:
