@@ -34,7 +34,8 @@ git clone https://github.com/prathamesh-a/graphical-password-authentication.git
 ## Usage
 To use the application, follow these steps:
 
-//TODO
+1. <a href="https://github.com/prathamesh-a/graphical-password-authentication/tree/main/server#usage">Setup Server</a>
+2. <a href="https://github.com/prathamesh-a/graphical-password-authentication/tree/main/client#usage">Setup Client</a>
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
