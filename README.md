@@ -32,3 +32,14 @@ git clone https://github.com/prathamesh-a/graphical-password-authentication.git
 To use the application, follow these steps:
 
 //TODO
+
+## Contributing
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository to your own account.
+2. Create a new branch from the **`develop`** branch.
+3. Make your changes and test them thoroughly.
+4. Submit a pull request to the **`develop`** branch.
+
+## License
+This project is licensed under the MIT License. See the <a href="https://github.com/prathamesh-a/graphical-password-authentication/blob/main/LICENSE">LICENSE</a> file for details.
