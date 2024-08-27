@@ -63,7 +63,7 @@ export default function Footer(props) {
                 </div>
             </div>
             <hr className="rounded-full border-gray-300 border-1 bg-gray-200 h-px mt-8 mx-auto w-3/4"/>
-            <p className="mt-2 text-[#9b9b9b] sm:text-md text-sm text-center pb-4">© Group 37, VIT BHOPAL</p>
+            <p className="mt-2 text-[#9b9b9b] sm:text-md text-sm text-center pb-4">github.com/prathamesh-a</p>
         </div>
 
     )
